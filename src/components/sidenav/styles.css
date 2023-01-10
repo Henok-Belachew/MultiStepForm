@@ -1,0 +1,77 @@
+.side {
+    width: 225px;
+    border-radius: 30px;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+#side-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    border-radius: 15px;
+    left: -5px;
+}
+
+.allsteps {
+    position: relative;
+    z-index: 5;
+    /* background-color: red; */
+    padding: 35px 30px;
+    gap: 22px;
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+}
+
+
+/* Styling Each step */
+
+
+.aStep {
+    display: flex;
+    gap: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+}
+
+.stepNum {
+    border: solid #ffffff9a 1px;
+    /* padding: 10px; */
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 100%;
+    font-weight: bolder;
+    
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+
+}
+.details h4 {
+    font-size: 11px;
+    font-weight: normal;
+    color: white;
+    opacity: 60%;   
+}
+
+.details h3 {
+    font-size: 12px;
+    /* font-weight: normal; */
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1.5px;
+}

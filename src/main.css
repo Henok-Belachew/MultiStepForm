@@ -1,0 +1,21 @@
+.main {
+    background-color: hsl(0, 0%, 100%);
+    width: 750px;
+    margin: 0 auto;
+    height: 470px;
+    border-radius: 10px;
+    padding: 12px;
+
+    /* centering main container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* positioning inside elemnts */
+    display: flex;
+    justify-content: space-between;
+    /* gap: 22px; */
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.233);
+}

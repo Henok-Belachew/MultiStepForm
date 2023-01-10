@@ -1,0 +1,39 @@
+@import url(../src/components/assets/fonts/Ubuntu-Regular.ttf);
+@import url(../src/components/assets/fonts/Ubuntu-Medium.ttf);
+@import url(../src/components/assets/fonts/Ubuntu-Bold.ttf);
+
+
+body {
+    background-color:hsl(229, 24%, 87%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    /* font-family: Ubuntu; */
+    /* font: Ubuntu-Medium; */
+}
+
+
+#colors {
+    color: #02295a;
+    color: #473dff;
+    color: #adbeff;
+    color: hsl(206, 94%, 87%);
+    color: hsl(354, 84%, 57%);
+    color: #9699ab;
+    color: hsl(229, 24%, 87%);
+    color: hsl(217, 100%, 97%);
+    color: hsl(231, 100%, 99%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+
