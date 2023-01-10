@@ -1,4 +1,4 @@
-export default [
+const addonData = [
 
     {
         id: 0,
@@ -29,3 +29,5 @@ export default [
     }
 
 ]
+
+export  default addonData

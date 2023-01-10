@@ -2,7 +2,7 @@ import Acrade from "../assets/images/icon-arcade.svg"
 import Advanced from "../assets/images/icon-advanced.svg"
 import Pro from "../assets/images/icon-pro.svg"
 
-export default [
+const plansData = [
     {
         icon: Acrade,
         plan: "Acrade",
@@ -28,3 +28,5 @@ export default [
 
     }
 ]
+
+export default plansData

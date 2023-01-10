@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function AddOns(props) {
 
@@ -16,7 +16,7 @@ export default function AddOns(props) {
     theStatus = props.addonsStatus[props.id]
 
     
-    const [checkStatus, setStatus] = useState(false)
+    
     const style = {
 
       
@@ -28,7 +28,7 @@ export default function AddOns(props) {
     
     function checker () {
 
-       if (props.id == 0) {
+       if (props.id === 0) {
        props.updateStep3(!props.addonsStatus[0],props.addonsStatus[1], props.addonsStatus[2])
 
         // document.getElementById("checkBox").checked = theStatus
@@ -36,10 +36,10 @@ export default function AddOns(props) {
        
        
     }
-    else if (props.id == 1) {
+    else if (props.id === 1) {
         props.updateStep3(props.addonsStatus[0],!props.addonsStatus[1], props.addonsStatus[2])
     }
-    else if (props.id == 2) {
+    else if (props.id === 2) {
         props.updateStep3(props.addonsStatus[0],props.addonsStatus[1], !props.addonsStatus[2])
     }
     }
@@ -49,9 +49,7 @@ export default function AddOns(props) {
 
     // function that returns checked
 
-    function checkMe() {
-        return "checked"
-    }
+    
    
     
     return (

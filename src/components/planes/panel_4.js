@@ -46,7 +46,7 @@ export default function panel_4(props) {
                         {props.Yearly && "(Yearly)"}
                         {!props.Yearly && "(Monthly)"}
                         </h4>
-                        <a onClick={updatetopanel2} href="#">Change</a>
+                        <span id="upperSpan" onClick={updatetopanel2} >Change</span>
                     </span>
                         <h5>
                        $

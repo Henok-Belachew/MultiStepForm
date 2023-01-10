@@ -313,7 +313,7 @@
     
 }
 
-.upper a {
+#upperSpan {
     text-decoration: underline;
     font-size: 13px;
     color: black;

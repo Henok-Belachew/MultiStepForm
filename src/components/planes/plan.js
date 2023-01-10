@@ -7,8 +7,8 @@ export default function Plan(props) {
         props.updatePlan(props.planNum, props.planType)
     }
     const style = {
-        border:  props.selected == props.planNum && "#473dff solid 1px",
-        backgroundColor: props.selected == props.planNum && "#f8f9fe" 
+        border:  props.selected === props.planNum && "#473dff solid 1px",
+        backgroundColor: props.selected === props.planNum && "#f8f9fe" 
     }
     return(
         <div onClick={updatePlan} className="plan" style={style}>

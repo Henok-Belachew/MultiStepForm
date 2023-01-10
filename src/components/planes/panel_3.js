@@ -8,13 +8,13 @@ export default function panel_3(props) {
 
     // fetching the passed data through props
     let theStatus = false
-    if (props.id == 1) {
+    if (props.id === 1) {
         theStatus = props.addons1
     }
-    else if (props.id == 2) {
+    else if (props.id === 2) {
         theStatus = props.addons2
     }
-    else if (props.id == 3) {
+    else if (props.id === 3) {
         theStatus = props.addons3
     }
     const addons = addonData.map(

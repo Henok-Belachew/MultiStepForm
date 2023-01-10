@@ -1,14 +1,14 @@
 import React from "react";
 import AllSteps from "./components/sidenav/allsteps";
 import "./main.css"
-import Panel_1 from "./components/planes/panel_1";
-import Panel_2 from "./components/planes/panel_2";
-import Panel_3 from "./components/planes/panel_3";
-import Panel_4 from "./components/planes/panel_4";
+import PanelOne from "./components/planes/panel_1";
+import PanelTwo from "./components/planes/panel_2";
+import PanelThree from "./components/planes/panel_3";
+import PanelFour from "./components/planes/panel_4";
 import ThankYou from "./components/planes/ThankYou";
 
 import { useState } from "react";
-import { type } from "@testing-library/user-event/dist/type";
+// import { type } from "@testing-library/user-event/dist/type";
 
 
 export default function Main () {
@@ -16,12 +16,10 @@ export default function Main () {
     const [PanelNum, setPanelNum] = useState(1);
    
     // Add-ons state
-    const [addOns, setaddOns] = useState([true, false, true])
+    // const [addOns, setaddOns] = useState([true, false, true])
 
     // State for each add_ons
-    const [addons1, setaddons1] = useState(false)
-    const [addons2, setaddons2] = useState(true)
-    const [addons3, setaddons3] = useState(true)
+
 
    
 
@@ -124,7 +122,7 @@ export default function Main () {
         <div className="main">
                 <AllSteps  PanelNum={PanelNum} />
                 
-                {PanelNum == 1 && <Panel_1 PanelNum={PanelNum} UpdatePanel={setPanelNum}
+                {PanelNum === 1 && <PanelOne PanelNum={PanelNum} UpdatePanel={setPanelNum}
                 
                 // Passing User Input values
 
@@ -143,7 +141,7 @@ export default function Main () {
                 
                 
                 />}
-                {PanelNum == 2 && <Panel_2  
+                {PanelNum === 2 && <PanelTwo  
                 PanelNum={PanelNum} 
                 UpdatePanel={setPanelNum} 
                
@@ -156,14 +154,14 @@ export default function Main () {
                 
                 />}
 
-                {PanelNum == 3 && <Panel_3 PanelNum={PanelNum} UpdatePanel={setPanelNum}
+                {PanelNum === 3 && <PanelThree PanelNum={PanelNum} UpdatePanel={setPanelNum}
                 
                 
                 selectedAdd = {userData.step_3}
 
              
                 // passing the state of each add-ons together
-                addOns = {addOns}
+                // addOns = {addOns}
 
                 // passing the state of each add-ons separately
                
@@ -176,13 +174,13 @@ export default function Main () {
                 Yearly = {userData.step_2.Yearly}
 
                 />}
-                {PanelNum == 4 && <Panel_4 PanelNum={PanelNum} UpdatePanel={setPanelNum}
+                {PanelNum === 4 && <PanelFour PanelNum={PanelNum} UpdatePanel={setPanelNum}
                 
                 selectedPlan = {userData.step_2.Plan}
                 Yearly = {userData.step_2.Yearly}
                 addOnStatus = {userData.step_3}
                 />}
-                {PanelNum == 5 && <ThankYou/>}
+                {PanelNum === 5 && <ThankYou/>}
                 
         </div>
         

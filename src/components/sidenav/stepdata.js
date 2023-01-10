@@ -1,4 +1,4 @@
-export default [
+const stepData = [
     {
         num: "1",
         step: "STEP 1",
@@ -20,3 +20,5 @@ export default [
         title: "SUMMARY"
     },
 ]
+
+export default stepData
