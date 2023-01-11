@@ -53,7 +53,7 @@ export default function AddOns(props) {
    
     
     return (
-        <div style={style} className="adds">
+        <div onClick={checker} style={style} className="adds">
                 <input id="checkBox"
                     onChange={checker}
                     checked={theStatus}

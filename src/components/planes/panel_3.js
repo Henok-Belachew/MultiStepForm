@@ -5,6 +5,11 @@ import addonData from "./addonData";
 
 export default function panel_3(props) {
 
+    // funtion that updates the status of the add
+    
+
+        
+       
 
     // fetching the passed data through props
     let theStatus = false
